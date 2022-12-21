@@ -11,14 +11,11 @@ function RespondClick(){
     aleatorio = N [Math.floor(Math.random() * N.length)];
     
     while (R.includes(aleatorio)){
-        aleatorio = N [Math.floor(Math.random() * N.length)];
-        
+        aleatorio = N [Math.floor(Math.random() * N.length)]; 
     } 
 
         R.push(aleatorio);
     
-    
-
     console.info(aleatorio);
     console.info(R);
     if (R.length==N.length){
@@ -26,5 +23,4 @@ function RespondClick(){
         return ("Fin del juego.");
         
     }
- 
 }
