@@ -4,38 +4,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script  type="module" src="scritp.js"></script>
-  <link rel="stylesheet" href="style.css">
-
+  <script  type="text/javascript" src="script.js"></script>
 </head>
 <body>
-<div class="coontainer"> <!--div con los jugadores participantes-->
-  <div id="card1" class="card">
-    <h2>Jugador</h2>
-  </div>
-  <div id="card2" class="card">
-    <h2>Jugador</h2>
-  </div>
-  <div id="card3" class="card">
-    <h2>Jugador</h2>
-  </div>
-  <div id="card4" class="card">
-    <h2>Jugador</h2>
-  </div>
-</div>
-
-  
-  <!-- <form>
-     <div>
-      <label for="uname">lista de jugadores </label>
-      <input type="text" id="gamers" name="name" />
-    </div>
-    <div>
-      <button onclick="push">disfrutad</button>
-    </div> 
-  </form> -->
-
+   <form onsubmit="return añadirnombre()">
+    <p>insert the  name</p>
+    <input type="text" id="box">
+    <input type="submit" value="añadir">
+  </form>
+  <form onsubmit="return quitarnumeros()">
+    <p>insert the  name</p>
+    <input type="text" id="box">
+    <input type="submit" value="quitar">
+  </form>
   
 </body>
 </html>
