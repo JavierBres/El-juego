@@ -5,18 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script  type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-   <form onsubmit="return añadirnombre()">
-    <p>insert the  name</p>
-    <input type="text" id="box">
-    <input type="submit" value="añadir">
+
+  <form onsubmit="return añadirnombre()" id="box">
+    <input type="text" class="caja" id="box"><br>
+    <input type="image" class="verde" id="box" src ="pictures/verde.png" alt="submit">
+    <input type="image" class="rojo" id="box" src="pictures/rojo.png" alt="reset"><br>
   </form>
-  <form onsubmit="return quitarnumeros()">
-    <p>insert the  name</p>
-    <input type="text" id="box">
-    <input type="submit" value="quitar">
-  </form>
+  
+    <textarea id="GamersList"></textarea>
+    
   
 </body>
 </html>

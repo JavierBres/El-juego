@@ -1,11 +1,10 @@
-var items =[];
+var gamers= [];
 function añadirnombre() {//llamamos a la funcion
-  boxvalue = document.getElementById("box").value;
+  boxvalue = document.getElementById("box").alt;
   items.push(boxvalue);//hacemos un push al Array "items" con el 
   return false;                                           
 }
-function restarnombre(){
-  boxvalue = document.getElementById("restbox").value;
-  items.slice(start,1)
-}
-  console.log(items);
+// var textarea = document.getElementById("GamersList");
+// textarea.value = gamers.join("\n");
+
+console.info(gamers);
