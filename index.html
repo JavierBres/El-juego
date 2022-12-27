@@ -8,16 +8,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-
-  <form onsubmit="return añadirnombre()" id="box">
-    <input type="text" class="caja" id="box"><br>
-    <input type="image" class="verde" id="box" src ="pictures/verde.png" alt="submit">
-    <input type="image" class="rojo" id="box" src="pictures/rojo.png" alt="reset"><br>
-  </form>
+<body> 
+  <!-- <div class="listadejugadores"> -->
+   <div id="myDIV" class="header">
+    <!-- <h1>jugadores</h1> -->
+      <input type="text" id="myInput" class="enterBox" placeholder="jugamos....??"><br>
+      <span onclick="newElement()"  class="addBtn"><img src="pictures/verde.png" class="muñecoverde"/></span>
+    </div>
+    <ol id="myOL"></ol>
   
-    <textarea id="GamersList"></textarea>
-    
+
+  
   
 </body>
 </html>
