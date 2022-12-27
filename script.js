@@ -15,6 +15,6 @@ function RespondClick(){
         R.push(aleatorio);
   console.info (R);
     if (R.length == N.length){
-        console.log ("Fin del Juego")
+        alert("Fin del juego");
     }
 }
