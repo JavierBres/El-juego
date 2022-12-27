@@ -1,0 +1,7 @@
+EL JUEGO
+
+
+Alert Box
+window.alert("text"); // se puede escribir sin window
+
+
