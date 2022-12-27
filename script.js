@@ -1,11 +1,10 @@
 const N = [ "Javier", "Elena", "Pablo", "Lucía"];
 const R = []
-
-console.info("Dale a Play para mostrar un nombre aleatorio:");
-
+let muertos = document.querySelector(".muertos");
 const playclick = document.getElementById("playclick");
 
-playclick.addEventListener( "click", RespondClick);
+playclick.addEventListener("click", RespondClick);
+
 
 function RespondClick(){
     aleatorio = N [Math.floor(Math.random() * N.length)];
@@ -13,14 +12,16 @@ function RespondClick(){
     while (R.includes(aleatorio)){
         aleatorio = N [Math.floor(Math.random() * N.length)]; 
     } 
-
         R.push(aleatorio);
-    
-    console.info(aleatorio);
-    console.info(R);
-    if (R.length==N.length){
-        console.info("Fin del juego.");
-        return ("Fin del juego.");
+    muertos.innerHTML += aleatorio;
+
+}
+
+function FinDelJuego(){
+
+    if (R.length === N.length){
         
-    }
+    return "Fin del juego";
+}
+
 }
