@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>El-juego</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script  type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body> 
+  <!-- <div class="listadejugadores"> -->
+   <div id="myDIV" class="header">
+    <!-- <h1>jugadores</h1> -->
+      <input type="text" id="myInput" class="enterBox" placeholder="jugamos....??"><br>
+      <span onclick="newElement()"  class="addBtn"><img src="pictures/verde.png" class="muñecoverde"/></span>
+    </div>
+    <ol id="myOL"></ol>
   
-    <a href="#" onmouseover="buttonclick()">Hover to click button above </a>
 
-    <button id="selfclick" onclick="alert('Roar');">No Manual Click </button>
-    
-      
-
-      
-    
+  
+  
 </body>
-
-<script src="script.js"></script>
 </html>
