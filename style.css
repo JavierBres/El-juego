@@ -27,11 +27,11 @@ ol li {
 
 
 /* Al hacer clic, agrega un color de fondo y tacha el texto */
-ol li.checked {
+/* ol li.checked {
   background: #888;
   color: #fff;
-  text-decoration: line-through;
-}
+  text-decoration: line-through; */
+
 
 /* Agrega una marca de "marcado" cuando se hace clic en */
 ol li.checked::before {
@@ -49,6 +49,7 @@ ol li.checked::before {
 
 /* Dale estilo al botón de cerrar */
 .close {
+  background-image: "";
   position: absolute;
   right: 0px;
   top: 0;
@@ -114,20 +115,21 @@ input {
   background-size:1420px 650px;
 } */
 #myInput{
-  height: 40px;
-  width:130px;
+  height: 45px;
+  width:80px;
   position:relative;
-  top: 50px; left: 50px;
+  top: 526px; left: 275px;
 
 }
 #myOL{
+  overflow: hidden;
   overflow-y: scroll;
   height:20%;
   width:20%;
   position:absolute;
-  top:150px left:100px;
-  list-style: none;
+  
 }
+
 body {
     margin:0;
     padding:0;

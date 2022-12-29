@@ -50,3 +50,13 @@ function newElement() {
     }
   }
 }
+
+
+const N = [ "Javier", "Elena", "Pablo", "Lucía"];
+const R = []
+
+const playclick = document.getElementById("playclick");
+
+playclick.addEventListener("click", RespondClick);
+
+
