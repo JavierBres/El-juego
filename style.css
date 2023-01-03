@@ -168,7 +168,9 @@ body {
         margin-left: 100px;
     }
     .container3{
-       margin-left: 25px;
+      position: relative;
+      display: inline-block;
+      margin-left: 25px;
     }
     .container4{
         justify-content: flex-end;
@@ -303,4 +305,7 @@ body {
     .cloud1{
         transform: rotateX(180deg);
     }
-    
+    .muerto{
+      position:absolute;
+      margin-top: 60%;
+    }
