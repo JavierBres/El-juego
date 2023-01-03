@@ -3,5 +3,39 @@ EL JUEGO
 
 Alert Box
 window.alert("text"); // se puede escribir sin window
+*******************
+<button class="reproductor">Reproduce tu audio</button>
+<audio src=""></audio>
+
+<script>
+    let boton = document.querySelector(".reproductor")
+    let audioEtiqueta = document.querySelector("audio")
+
+    boton.addEventListener("click", () => {
+      audioEtiqueta.setAttribute("src", "ruta_a_tu_archivo")
+      audioEtiqueta.play()
+      console.log(`Reproduciendo: ${audioEtiqueta.src}`)
+    })
+</script>
+******************
+Estuve checando y considero que estar creando un elemento para el DOM cada vez que se presiona el botón puede no ser la mejor opción.
+
+Entonces:
+
+    Declaramos una etiqueta audio son el atributo src vacío
+    Recuperamos a dicha etiqueta en una variable
+    Por dentro de la función recuperamos a la variable y le asignamos un valor a su atributo src
+
+***********************
+
+let data = ["lucia", "lucia", "pablo", "elena", "elena", "javi","carlos", "celia"];
+
+let dataList = data.filter((value, index, array) => {
+    return array.indexOf(value) == index;
+});
+****************************
+
+
+https://screensiz.es/ (medidas de las medidas habituales de las pantallas)
 
 
