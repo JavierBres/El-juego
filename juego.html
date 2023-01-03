@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script  type="text/javascript" src="script.js"></script>
     <title>El-juego</title>
 </head>
 <body style="background-color: #8DBEB1;">
@@ -37,8 +36,10 @@
             <div class= "container">
                 <div class="container1">
                     <input type="text" id="myInput" class="enterBox" placeholder="jugamos....??">
-                    <span onclick="newElement()"  class="addBtn"><img class="jugador" src="images/jugador.png" alt="gamer" width="430px"></span>
-                    <ol id="myOL"></ol>
+                    <span onclick="añadir()"  class="addBtn"><img class="jugador" src="images/jugador.png" alt="gamer" width="430px"></span>
+                    <div class="playerslist">
+                        <ol id="myOL"> </ol>
+                    </div>
                 </div>
                 <div class="container2">
                     <div><img class="muñeca" src="images/muneca.png" alt="doll" width="700px"></div>
@@ -57,6 +58,5 @@
       
 
 </body>
-
-<script src="script.js"></script>
 </html>
+<script  type="text/javascript" src="script.js"></script>

@@ -1,13 +1,13 @@
 /* Incluir el relleno y el borde en el ancho y alto total de un elemento */
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
-/* Eliminar márgenes y relleno de la lista */
+/* Eliminar márgenes y relleno de la lista
 ol {
   margin: 20;
   padding: 20;
-}
+} */
 
 /* Aplica estilo a los elementos de la lista */
 ol li {
@@ -49,7 +49,7 @@ ol li.checked::before {
 
 /* Dale estilo al botón de cerrar */
 .close {
-  background-image: "";
+  background-image: ;
   position: absolute;
   right: 0px;
   top: 0;
@@ -122,7 +122,7 @@ input {
 
 }
 #myOL{
-  overflow: hidden;
+  
   overflow-y: scroll;
   height:20%;
   width:20%;
