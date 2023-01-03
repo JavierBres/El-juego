@@ -44,10 +44,10 @@ function newElement() {
     }
   }
 }
-const N = [ "Javier", "Elena", "Pablo", "Lucía"];
-const R = []
+let N = [ "Javier", "Elena", "Pablo", "Lucía"];
+let R = []
 
-const playclick = document.getElementById("playclick");
+
 
 playclick.addEventListener("click", RespondClick);
 
@@ -57,10 +57,14 @@ function RespondClick(){
     
     while (R.includes(aleatorio)){
         aleatorio = N [Math.floor(Math.random() * N.length)]; 
+        
     } 
         R.push(aleatorio);
+        window.alert(R);   
   console.info (R);
     if (R.length == N.length){
         alert("Fin del juego");
     }
+
 }
+  
