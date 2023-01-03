@@ -20,14 +20,6 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-// Agregue un símbolo de "marcado" al hacer clic en un elemento de la lista
-var list = document.querySelector('ol');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
-
 // Crear un nuevo elemento de lista al hacer clic en el botón "Agregar"
 function newElement() {
   var li = document.createElement("li");
@@ -50,3 +42,19 @@ function newElement() {
     }
   }
 }
+
+let buttonPlayer = document.querySelector(".selfclick")
+
+    buttonPlayer.addEventListener("click", () => {
+    audioEtiqueta.setAttribute("src", "./sound/inicio_juego.mp3")
+    audioEtiqueta.play()
+    console.log(`Reproduciendo: ${audioEtiqueta.src}`)
+    })
+
+// let boton = document.querySelector(".reproductor")
+
+//   boton.addEventListener("click", () => {
+//     let etiquetaAudio = document.createElement("audio")
+//     etiquetaAudio.setAttribute("src", "ubicación de tu archivo de audio")
+//     etiquetaAudio.play()
+//     })
