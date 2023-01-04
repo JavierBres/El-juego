@@ -44,19 +44,23 @@ function newElement() {
     }
   }
 }
+const N = [ "Javier", "Elena", "Pablo", "Lucía"];
+const R = []
 
-let buttonPlayer = document.querySelector(".selfclick")
+const playclick = document.getElementById("playclick");
 
-    buttonPlayer.addEventListener("click", () => {
-    audioEtiqueta.setAttribute("src", "./sound/inicio_juego.mp3")
-    audioEtiqueta.play()
-    console.log(`Reproduciendo: ${audioEtiqueta.src}`)
-    })
+playclick.addEventListener("click", RespondClick);
 
-// let boton = document.querySelector(".reproductor")
 
-//   boton.addEventListener("click", () => {
-//     let etiquetaAudio = document.createElement("audio")
-//     etiquetaAudio.setAttribute("src", "ubicación de tu archivo de audio")
-//     etiquetaAudio.play()
-//     })
+function RespondClick(){
+    aleatorio = N [Math.floor(Math.random() * N.length)];
+    
+    while (R.includes(aleatorio)){
+        aleatorio = N [Math.floor(Math.random() * N.length)]; 
+    } 
+        R.push(aleatorio);
+  console.info (R);
+    if (R.length == N.length){
+        alert("Fin del juego");
+    }
+}
