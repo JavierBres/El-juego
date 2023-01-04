@@ -3,23 +3,31 @@ var myNodelist = document.getElementsByTagName("li");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
   var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
+  var img = document.createElement("img");
+  img.src= '../images/asesino.png'
+  document.body.appendChild("img");
   span.className = "close";
   span.appendChild(txt);
   myNodelist[i].appendChild(span);
 }
 
 // Haga clic en un botón de cierre para ocultar el elemento de la lista actual
-// var close = document.getElementsByClassName("close");
-// var i;
-// for (i = 0; i < close.length; i++) {
-//   close[i].onclick = function () {
-//     var div = this.parentElement;
-//     div.style.display = "none";
-//   }
-// }
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
 
-
+// Agregue un símbolo de "marcado" al hacer clic en un elemento de la lista
+var list = document.querySelector('ol');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
 
 // Crear un nuevo elemento de lista al hacer clic en el botón "Agregar"
 let lives = ["javi","elena","lucia","pablo","diego"];
