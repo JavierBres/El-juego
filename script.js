@@ -63,7 +63,7 @@ function RespondClick(){
       console.info(aleatorio);
       document.getElementById("muerto").innerHTML = aleatorio;
     if (R.length === N.length){
-    //setTimeout (()=>{alert("Fin del juego")},500);
+    setTimeout (()=>{alert("Fin del juego")},500);
     }
     }
     
