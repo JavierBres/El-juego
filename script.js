@@ -53,19 +53,16 @@ playclick.addEventListener("click", RespondClick);
 
 function RespondClick(){
     aleatorio = N [Math.floor(Math.random() * N.length)];
-        while (R.includes(aleatorio)){
-          aleatorio = N [Math.floor(Math.random() * N.length)];
-        } 
-    R.push(aleatorio);
-    console.info(aleatorio);
-    document.getElementById("muerto").innerHTML = aleatorio;
+    
 
+    while (R.includes(aleatorio)){
+        aleatorio = N [Math.floor(Math.random() * N.length)];
+        
+    } 
+      R.push(aleatorio);
+      console.info(aleatorio);
+      document.getElementById("muerto").innerHTML = aleatorio;
     if (R.length === N.length){
-      setTimeout (()=>{alert("Fin del juego")},500);
+    setTimeout (()=>{alert("Fin del juego")},1000);
     }
     }
-    
-
-    
-
-  
