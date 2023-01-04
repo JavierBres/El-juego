@@ -4,7 +4,9 @@ var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
   var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
+  var img = document.createElement("img");
+  img.src= '../images/asesino.png'
+  document.body.appendChild("img");
   span.className = "close";
   span.appendChild(txt);
   myNodelist[i].appendChild(span);
