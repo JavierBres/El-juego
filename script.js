@@ -56,17 +56,24 @@ let R = []
 
 playclick.addEventListener("click", RespondClick);
 
+
 function RespondClick(){
     aleatorio = N [Math.floor(Math.random() * N.length)];
-    document.getElementById("muerto").innerHTML = aleatorio;
+    
+
     while (R.includes(aleatorio)){
         aleatorio = N [Math.floor(Math.random() * N.length)];
+        
     } 
-        R.push(aleatorio);
-   
-    if (R.length == N.length){
-        alert("Fin del juego");
+      R.push(aleatorio);
+      console.info(aleatorio);
+      document.getElementById("muerto").innerHTML = aleatorio;
+    if (R.length === N.length){
+    //setTimeout (()=>{alert("Fin del juego")},500);
     }
-     
-}
+    }
+    
+
+    
+
   
