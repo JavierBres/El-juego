@@ -54,9 +54,10 @@ body {
     ol li {
         cursor: pointer;
         position: relative;
-        padding: 3% 3% 10% 3%;
+        padding: 3% 3% 8% 3%;
         background: rgb(255, 255, 255);
-        font-size: 14pt;
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 12pt;
         transition: 0.2s;
         
   
@@ -104,13 +105,14 @@ body {
         position:absolute;
         top: 51.6%; 
         left: 18.9%;
-        font-size: 10pt;
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 12pt;
         border: none;
        
     }
     #myOL{
         overflow-y: scroll;
-        height:20%;
+        height:30%;
         width:26%;
         position:absolute;
         top: 60%;
