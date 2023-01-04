@@ -74,9 +74,9 @@ function RespondClick() {
   }
   dead.push(aleatorio);
   
-  console.info(dead);
+  console.info("muere" + dead );
   
-  document.getElementById("muerto").innerHTML = aleatorio;
+  // document.getElementById("muerto").innerHTML = aleatorio;
   
   if (dead.length === lives.length) {
     setTimeout (()=>{alert("Fin del juego")},1000);
