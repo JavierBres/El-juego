@@ -45,14 +45,14 @@ function newElement() {
 }
 
 
-// let Name = [];
-let Name = document.getElementById("myOL");
-let items = document.getElementsByTagName("li");
+let Name = [];
+// let Name = document.getElementById("myOL");
+// let items = document.getElementsByTagName("li");
 
-for (let i=0; i<items.length; ++i) {
-  items[i].innerHTML
-}
-console.info(Name)
+// for (let i=0; i<items.length; ++i) {
+//   items[i].innerHTML
+// }
+
 
 // function getDataFromList(id) {
 //   let data = [...document.querySelectorAll(`#${id} li`)]
@@ -62,15 +62,15 @@ console.info(Name)
 // }
 
 // getDataFromList('myOL');
-// console.info(Name)
 
-// function añadir() {
-//   let player = document.getElementById('myInput').value.split(" ");
-//   Name = Name.concat(player);
-//   document.getElementById('myInput').value = ""; 
-//   console.info(Name);
-//   document.getElementById("myOL").innerHTML = Name.join("<li>")
-//   }
+
+function añadir() {
+  let player = document.getElementById('myInput').value.split(" ");
+  Name = Name.concat(player);
+  document.getElementById('myInput').value = ""; 
+  console.info(Name);
+  document.getElementById("myOL").innerHTML = Name.join("<li>")
+  }
  
    
   //   let list = document.getElementById("myOL");
