@@ -44,7 +44,13 @@
             <div class="logo"><img src="images/logo_juego-01.png" alt="logo" width="30%"></div>
             <div class="doll">
                 <a href="juego.html" onmouseover="buttonclick()"><img src="images/muneca.png"  width="60%"  alt="doll"></a>
-                <button class="selfclick" onclick="alert('Roar');"></button>
+                <img src="images/juegas_01.png" class="buttonSound" onclick="myFunction()" onload="OnLoad()" width="700" alt="doll">
+
+              <audio id="audio" controls style="display:none">
+                <source src="sound/inicio_juego.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+
                 <img class="bocadillo" src="images/juegas_01.png" width="40%" alt="¿juegas?">
             </div>
      </section>

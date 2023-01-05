@@ -304,4 +304,11 @@ body {
       margin-top: 8%;
       font-family: 'Chakra Petch', sans-serif;
     }
+    buttonSound {     
+        height: 50%;
+        width: 95%;       
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 20%;    
+    }
     
