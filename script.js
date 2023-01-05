@@ -21,22 +21,17 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-// Agregue un símbolo de "marcado" al hacer clic en un elemento de la lista
-var list = document.querySelector('ol');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
 
 // Crear un nuevo elemento de lista al hacer clic en el botón "Agregar"
-let lives = ["javi","elena","lucia","pablo","diego"];
+let lives = [];
 function newElement() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
-  document.getElementById("myOL").appendChild(li);
+  if(inputValue === ''){
+  }else{
+  document.getElementById("myOL").appendChild(li);}
   document.getElementById("myInput").value = "";
   lives.push(inputValue)
 
@@ -55,11 +50,7 @@ function newElement() {
   console.info(lives)
 }
 
-
-
-
-
-const dead = [];
+let dead = [];
 
 const playclick = document.getElementById("playclick");
 
@@ -74,18 +65,29 @@ function RespondClick() {
   }
   dead.push(aleatorio);
   
-  console.info("muere" + dead );
-  
-  // document.getElementById("muerto").innerHTML = aleatorio;
+  console.info( dead );
+
+  document.getElementById("muerto").innerHTML = aleatorio;
   
   if (dead.length === lives.length) {
     setTimeout (()=>{alert("Fin del juego")},1000);
   }
 }
 
-// function deleteLives (itemLive){
+//funcion eliminar  jugadores de lista y array a la vez, no funcniona!!!
+function deleteLives (){
+  for(var i = lives.length - 1; i >= 0; i--) {
+    if(lives[i] === number) {
+       lives.splice(i, 1);
+    }
+}
+}
+// let dataList = data.filter((value, index, array) => {
+//   return array.indexOf(value) == index;
+// })
 
-// }
+console.info (deleteLives)
+
 
  console.info(lives)
  

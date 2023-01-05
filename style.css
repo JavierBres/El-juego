@@ -112,6 +112,7 @@ body {
     }
     #myOL{
         overflow-y: scroll;
+        overflow: overlay;
         height:30%;
         width:26%;
         position:absolute;
