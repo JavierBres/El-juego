@@ -45,24 +45,24 @@ function newElement() {
   }
 }
 // Elección aleatoria de jugador
-let N = [ "Javier", "Elena", "Pablo", "Lucía"];
-let R = []
+let lives = [ ];
+let dead = [];
 
 playclick.addEventListener("click", RespondClick);
 
 
 function RespondClick(){
-    aleatorio = N [Math.floor(Math.random() * N.length)];
+    aleatorio = lives [Math.floor(Math.random() * lives.length)];
     
 
-    while (R.includes(aleatorio)){
-        aleatorio = N [Math.floor(Math.random() * N.length)];
+    while (dead.includes(aleatorio)){
+        aleatorio = lives [Math.floor(Math.random() * lives.length)];
         
     } 
-      R.push(aleatorio);
+      dead.push(aleatorio);
       console.info(aleatorio);
       document.getElementById("muerto").innerHTML = aleatorio;
-    if (R.length === N.length){
-    setTimeout (()=>{alert("Fin del juego")},1000);
+    if (dead.length === lives.length){
+      setTimeout (()=>{alert("Fin del juego")},1000);
     }
     }
