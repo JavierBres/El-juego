@@ -296,6 +296,7 @@ body {
     .cloud1{
         transform: rotateX(180deg);
     }
+<<<<<<< HEAD
    
     @media screen(min-width: 320px){ 
         
@@ -457,3 +458,14 @@ body {
 
     }
     
+=======
+
+    #muerto{
+      position: absolute;
+      font-size: 80px;
+      margin-left: 10%;
+      margin-top: 8%;
+      font-family: 'Chakra Petch', sans-serif;
+    }
+    
+>>>>>>> b5e3604c9c6c3619ffabbe8e7c4db798e587a625

@@ -44,19 +44,25 @@ function newElement() {
     }
   }
 }
+// Elección aleatoria de jugador
+let lives = [ ];
+let dead = [];
 
-let buttonPlayer = document.querySelector(".selfclick")
+playclick.addEventListener("click", RespondClick);
 
-    buttonPlayer.addEventListener("click", () => {
-    audioEtiqueta.setAttribute("src", "./sound/inicio_juego.mp3")
-    audioEtiqueta.play()
-    console.log(`Reproduciendo: ${audioEtiqueta.src}`)
-    })
 
-// let boton = document.querySelector(".reproductor")
+function RespondClick(){
+    aleatorio = lives [Math.floor(Math.random() * lives.length)];
+    
 
-//   boton.addEventListener("click", () => {
-//     let etiquetaAudio = document.createElement("audio")
-//     etiquetaAudio.setAttribute("src", "ubicación de tu archivo de audio")
-//     etiquetaAudio.play()
-//     })
+    while (dead.includes(aleatorio)){
+        aleatorio = lives [Math.floor(Math.random() * lives.length)];
+        
+    } 
+      dead.push(aleatorio);
+      console.info(aleatorio);
+      document.getElementById("muerto").innerHTML = aleatorio;
+    if (dead.length === lives.length){
+      setTimeout (()=>{alert("Fin del juego")},1000);
+    }
+    }
